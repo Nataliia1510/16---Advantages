@@ -1,0 +1,10 @@
+.container {
+  @include container;
+  @include respond-to('medium') {
+    @include container($wd: 100%, $ml: auto, $mr: auto, $pl: 32px, $pr: 32px);
+  }
+
+  @include respond-to('large') {
+    @include container($wd: 100%, $ml: auto, $mr: auto, $pl: 16px, $pr: 16px);
+  }
+}
