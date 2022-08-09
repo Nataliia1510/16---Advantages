@@ -1,0 +1,27 @@
+/* Hero section */
+
+.hero {
+  background-color: var(--secondary-bg-color);
+}
+
+.hero__title {
+  font-weight: 400;
+
+  text-transform: uppercase;
+}
+
+.hero__title--white {
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+}
+
+.hero__title--dark {
+  font-size: 48px;
+  line-height: 96.5%;
+  /* or 46px */
+
+  color: #d41443;
+}
