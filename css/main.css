@@ -130,21 +130,28 @@ a {
 }
 
 .button--hero {
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   width: 83px;
   height: 24px;
 }
 @media (min-width: 1200px) {
   .button--hero {
+    font-size: 14px;
+    line-height: 18px;
     width: 138px;
     height: 40px;
   }
 }
 
 .button--pink {
-  height: 24px;
   width: 62px;
+  color: #d41443;
   color: var(--main-bg-color);
   background-color: var(--accent-color);
   -webkit-transition: var(--timing-transition);
@@ -152,7 +159,9 @@ a {
 }
 @media (min-width: 1200px) {
   .button--pink {
-    width: 104px;
+    font-size: 14px;
+    line-height: 18px;
+    width: 107px;
   }
 }
 .button--pink:hover, .button--pink:focus {
@@ -257,6 +266,326 @@ a {
     margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
+  }
+}
+
+/* Hero section */
+.hero {
+  height: 502px;
+  background-color: var(--complementary-bg-color);
+}
+@media (min-width: 768px) {
+  .hero {
+    height: 416px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    height: 664px;
+  }
+}
+
+.hero-container {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .hero-container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-container {
+    max-width: 1200px;
+  }
+}
+
+.hero__thumb {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+}
+@media (min-width: 768px) {
+  .hero__thumb {
+    right: 303px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__thumb {
+    right: 368px;
+  }
+}
+
+.hero-wrapper {
+  position: absolute;
+  top: 194px;
+  left: 20px;
+}
+@media (min-width: 768px) {
+  .hero-wrapper {
+    top: 102px;
+    left: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-wrapper {
+    top: 147px;
+    left: 16px;
+  }
+}
+
+.title-hero-box {
+  font-family: "Titan One";
+  width: 218px;
+  height: 106px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .title-hero-box {
+    width: 162px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .title-hero-box {
+    width: 277px;
+    height: 137px;
+    margin-bottom: 20px;
+  }
+}
+
+.hero__title {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.hero__title--white {
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  color: var(--secondary-text-color);
+}
+@media (min-width: 768px) {
+  .hero__title--white {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__title--white {
+    font-size: 38px;
+    line-height: 1.16;
+  }
+}
+
+.hero__title--dark {
+  font-size: 48px;
+  line-height: 0.96%;
+  color: #d41443;
+}
+@media (min-width: 768px) {
+  .hero__title--dark {
+    font-size: 34px;
+    line-height: 0.9;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__title--dark {
+    font-size: 58px;
+    line-height: 0.9;
+  }
+}
+
+.hero-btn {
+  gap: 8px;
+}
+@media screen and (max-width: 480px) {
+  .hero-btn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-btn {
+    gap: 12px;
+  }
+}
+
+.circle {
+  position: absolute;
+  top: 83px;
+  left: 36px;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+}
+@media (min-width: 768px) {
+  .circle {
+    top: 43px;
+    left: 248px;
+    width: 335px;
+    height: 333px;
+  }
+}
+@media (min-width: 1200px) {
+  .circle {
+    top: 54px;
+    left: 557px;
+    width: 534px;
+    height: 534px;
+  }
+}
+
+.hero__group {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hero__group {
+    display: block;
+    position: absolute;
+    top: 94px;
+    right: 42px;
+  }
+  .hero__group-item:not(:last-child) {
+    margin-bottom: 26px;
+  }
+  .hero__group-item {
+    position: relative;
+    z-index: 1;
+  }
+  .hero__group-item:first-child::before {
+    content: "cafes";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    font-family: DM Sans;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--secondary-text-color);
+  }
+  .hero__group-item:last-child::before {
+    content: "food trucks";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    font-family: DM Sans;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.1;
+    width: 43px;
+    color: var(--secondary-text-color);
+  }
+  .hero__group-item::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: -6px;
+    z-index: -1;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--main-bg-color);
+  }
+  .hero__group-text {
+    font-family: Titan One;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--accent-color);
+  }
+}
+
+.hero__milk {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hero__milk {
+    display: block;
+    position: absolute;
+    bottom: 16px;
+    left: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__milk {
+    bottom: 60px;
+    left: 16px;
+  }
+}
+
+.text-hero {
+  display: none;
+}
+@media (min-width: 768px) {
+  .text-hero {
+    display: block;
+    position: absolute;
+    bottom: 56px;
+    left: 184px;
+    width: 114px;
+    height: 48px;
+  }
+}
+@media (min-width: 1200px) {
+  .text-hero {
+    bottom: 84px;
+    left: 269px;
+    width: 200px;
+    height: 78px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__text {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    color: var(--secondary-text-colo);
+  }
+}
+@media (min-width: 1200px) {
+  .hero__text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+.hero__arrow {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hero__arrow {
+    display: block;
+    margin-top: 7px;
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__arrow {
+    margin-top: 20px;
+  }
+}
+
+.hero__girl {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hero__girl {
+    display: block;
+    position: absolute;
+    bottom: 7px;
+    right: 32px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  .hero__girl {
+    bottom: 0px;
+    right: 16px;
   }
 }
 

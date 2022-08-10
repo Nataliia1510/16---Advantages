@@ -22,102 +22,44 @@
   </head>
   <body>
     <!-- Секція Hero -->
-    <section class="hero">
-      <div class="container">
-        <h1 class="hero__title hero__title--white">
-          ice cream made with<span class="hero__title--dark">passion</span>
-        </h1>
-        <!-- <h1 class="hero__title">
-          <span class="hero__title--white"
-            >ice cream <br />
-            made with</span
-          ><br />
-          <span class="hero__title--dark">passion</span>
-        </h1> -->
-
-        <img src="./hero/+.svg" alt="plus" class="hero__svg" />
-
+    <section class="hero section">
+      <div class="container hero-container">
         <div class="circle"></div>
-
-        <!-- <picture class="hero__thumb">
+        <picture class="hero__thumb">
           <source
             media="(min-width: 1200px)"
-            srcset="
-              ./hero/icecream-desk.png    1x,
-              ./hero/icecream-desk@2x.png 2x,
-              ./hero/icecream-desk@3x.png 3x
-            "
-            type="image/jpg"
+            srcset="./images/hero/icecream-desk.png 1x, ./images/hero/icecream-desk@2x.png 2x"
+            type="image/png"
           />
           <source
             media="(min-width: 768px)"
-            srcset="
-              ./hero/icecream-tab.png    1x,
-              ./hero/icecream-tab@2x.png 2x,
-              ./hero/icecream-tab@3x.png 3x
-            "
-            type="image/jpg"
+            srcset="./images/hero/icecream-tab.png 1x, ./images/hero/icecream-tab@2x.png 2x"
+            type="image/png"
           />
           <source
             media="(max-width: 767px)"
-            srcset="
-              ./hero/icecream-mob.png    1x,
-              ./hero/icecream-mob@2x.png 2x,
-              ./hero/icecream-mob@3x.png 3x
-            "
-            type="image/jpg"
+            srcset="./images/hero/icecream-mob.png 1x, ./images/hero/icecream-mob@2x.png 2x"
+            type="image/png"
           />
-          <img src="./hero/icecream.png" alt="icecream" />
-        </picture> -->
-        <ul class="btns">
-          <li class="btns__item">
-            <a href=""
-              ><button type="button" class="button btn__hero btn__hero--red">Products</button></a
-            >
-          </li>
-          <li class="btns__item">
-            <a href=""
-              ><button type="button" class="button btn__hero btn__hero--light">
-                How it’s made?
-              </button></a
-            >
-          </li>
-        </ul>
-
-        <!-- <picture class="hero__girl">
-          <source
-            media="(min-width: 1200px)"
-            srcset="./hero/girl-desk.png 1x, ./hero/girl-desk@2x.png 2x, ./hero/girl-desk@3x.png 3x"
-            type="image/jpg"
+          <img
+            class="hero__svg"
+            src="./images/hero/icecream-mob.png"
+            alt="icecream"
+            width="171"
+            height="410"
           />
-          <source
-            media="(min-width: 768px)"
-            srcset="./hero/girl-tab.png 1x, ./hero/girl-tab@2x.png 2x, ./hero/girl-tab@3x.png 3x"
-            type="image/jpg"
-          />
-          <img src="./hero/girl-desk.png" alt="girl with icecream" />
         </picture>
-
-        <picture class="hero__milk">
-          <source
-            media="(min-width: 1200px)"
-            srcset="./hero/milk-desk.png 1x, ./hero/milk-desk@2x.png 2x, ./hero/milk-desk@3x.png 3x"
-            type="image/jpg"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="./hero/milk-tab.png 1x, ./hero/milk-tab@2x.png 2x, ./hero/milk-tab@3x.png 3x"
-            type="image/jpg"
-          />
-          <img src="./hero/milk-desk.png" alt="milk in a jug" />
-        </picture> -->
-
-        <!-- <p class="hero__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et
-        </p> -->
-        <!-- <div class="hero__arrow">
-          <img src="./hero/arrow.png" alt="button" />
+        <div class="hero-wrapper">
+          <div class="title-hero-box">
+            <h1 class="hero__title">
+              <span class="hero__title--white">ice cream made with</span>
+              <span class="hero__title--dark"> passion</span>
+            </h1>
+          </div>
+          <div class="hero-btn">
+            <a class="button button--hero button--pink" href="">Products</a>
+            <a class="button button--hero" href="">How it’s made?</a>
+          </div>
         </div>
 
         <ul class="hero__group">
@@ -127,7 +69,57 @@
           <li class="hero__group-item">
             <p class="hero__group-text">23</p>
           </li>
-        </ul> -->
+        </ul>
+
+        <picture class="hero__milk">
+          <source
+            media="(min-width: 1200px)"
+            srcset="./images/hero/milk-desk.png 1x, ./images/hero/milk-desk@2x.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/hero/milk-tab.png 1x, ./images/hero/milk-tab@2x.png 2x"
+            type="image/png"
+          />
+          <img
+            class="hero__svg"
+            src="./images/hero/milk-tab.png"
+            alt="icecream"
+            width="213"
+            height="216"
+          />
+        </picture>
+
+        <div class="text-hero">
+          <p class="hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <div class="hero__arrow">
+            <img src="./images/hero/arrow.png" alt="button" />
+          </div>
+        </div>
+
+        <picture class="hero__girl">
+          <source
+            media="(min-width: 1200px)"
+            srcset="./images/hero/girl-desk.png 1x, ./images/hero/girl-desk@2x.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/hero/girl-tab.png 1x, ./images/hero/girl-tab@2x.png 2x"
+            type="image/png"
+          />
+          <img
+            class="hero__svg"
+            src="./images/hero/girl-tab.png"
+            alt="icecream"
+            width="304"
+            height="241"
+          />
+        </picture>
       </div>
     </section>
 
