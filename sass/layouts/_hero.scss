@@ -1,22 +1,21 @@
 /* Hero section */
-.hero {
+.hero-container {
   position: relative;
-  height: 502px;
-
-  background-color: var(--complementary-bg-color);
-
-  @include respond-to('medium') {
-    height: 416px;
-  }
-
-  @include respond-to('large') {
-    height: 664px;
-  }
+  width: 320px;
+    height: 502px;
+  
+    background-color: var(--complementary-bg-color);
+  
+    @include respond-to('medium') {
+      width: 768px;
+      height: 416px;
+    }
+  
+    @include respond-to('large') {
+      width: 1200px;
+      height: 664px;
+    }
 }
-
-// .hero-container {
-
-// }
 
 .hero__thumb {
   position: absolute;
@@ -203,6 +202,7 @@
         line-height: 1.29;
 
         width: 92px;
+        text-align:right;
       }
     }
 
@@ -264,7 +264,7 @@
     display: block;
 
     position: absolute;
-    bottom: 56px;
+    bottom: 81px;
     left: 184px;
 
     width: 114px;
@@ -272,8 +272,8 @@
   }
 
   @include respond-to('large') {
-    bottom: 84px;
-    left: 269px;
+    bottom: 130px;
+    left: 229px;
 
     width: 200px;
     height: 78px;
@@ -321,7 +321,7 @@
     display: block;
 
     position: absolute;
-    bottom: 7px;
+    bottom: 1px;
     right: 32px;
 
     @include respond-to('large') {

@@ -269,18 +269,21 @@ a {
 }
 
 /* Hero section */
-.hero {
+.hero-container {
   position: relative;
+  width: 320px;
   height: 502px;
   background-color: var(--complementary-bg-color);
 }
 @media (min-width: 768px) {
-  .hero {
+  .hero-container {
+    width: 768px;
     height: 416px;
   }
 }
 @media (min-width: 1200px) {
-  .hero {
+  .hero-container {
+    width: 1200px;
     height: 664px;
   }
 }
@@ -475,6 +478,7 @@ a {
     font-size: 14px;
     line-height: 1.29;
     width: 92px;
+    text-align: right;
   }
 }
 @media (min-width: 768px) {
@@ -537,7 +541,7 @@ a {
   .text-hero {
     display: block;
     position: absolute;
-    bottom: 56px;
+    bottom: 81px;
     left: 184px;
     width: 114px;
     height: 48px;
@@ -545,8 +549,8 @@ a {
 }
 @media (min-width: 1200px) {
   .text-hero {
-    bottom: 84px;
-    left: 269px;
+    bottom: 130px;
+    left: 229px;
     width: 200px;
     height: 78px;
   }
@@ -593,7 +597,7 @@ a {
   .hero__girl {
     display: block;
     position: absolute;
-    bottom: 7px;
+    bottom: 1px;
     right: 32px;
   }
 }
