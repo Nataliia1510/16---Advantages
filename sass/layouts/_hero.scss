@@ -1,10 +1,14 @@
 /* Hero section */
+.hero {
+background-color: var(--complementary-bg-color);
+}
+
 .hero-container {
   position: relative;
   width: 320px;
     height: 502px;
   
-    background-color: var(--complementary-bg-color);
+    
   
     @include respond-to('medium') {
       width: 768px;

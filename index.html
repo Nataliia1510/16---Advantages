@@ -21,6 +21,55 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- Секція Header -->
+    <header class="header">
+      <div class="header__container">
+        <a class="header__logo" href="./index.html" aria-label="Logo IceCreame">
+          <svg class="header__icon" width="199" height="50">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link current" href="#home">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#about">About us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#made">How it’s made?</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#products">Our products</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="mobile-menu__btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu__nav-list"
+          type="button"
+        >
+          <svg class="mobile-menu__icon" width="20" height="12">
+            <use class="mobile-menu__burger" href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+
+        <button class="button button--header" type="button" data-modal-open>
+          <span>Buy now</span>
+          <svg class="button__icon" width="10" height="10">
+            <use href="./images/icons.svg#icon-vector"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
     <!-- Секція Hero -->
     <section class="hero section">
       <div class="container hero-container">
@@ -123,7 +172,7 @@
       </div>
     </section>
 
-    <!-- Секция Advantages -->
+    <!-- Секція Advantages -->
     <section class="advantages section">
       <div class="container">
         <h2 class="visually-hidden">Advantages ice cream</h2>
@@ -236,5 +285,116 @@
         </ul>
       </div>
     </section>
+
+    <!-- Модальне вікно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__button" type="button" data-modal-close>
+          <svg class="modal__icon--clos" width="18" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <strong class="order order--title">Make the order</strong>
+        <div class="modal__menu">
+          <form class="order-form">
+            <label class="order-form__label" for="">
+              <ul class="order-form__box">
+                <li>
+                  <img class="order-form__pic" src="./images/desktop/ice_cream.png" alt="" />
+                </li>
+                <li>
+                  <input
+                    class="order-form__number"
+                    type="number"
+                    name="icecream"
+                    value="0"
+                    min="0"
+                  />
+                </li>
+              </ul>
+            </label>
+            <label for="">
+              <ul class="order-form__box">
+                <li>
+                  <img class="order-form__pic" src="./images/desktop/ice_coffee.png" alt="" />
+                </li>
+                <li>
+                  <input
+                    class="order-form__number"
+                    type="number"
+                    name="icecream"
+                    value="0"
+                    min="0"
+                  />
+                </li>
+              </ul>
+            </label>
+            <label for="">
+              <ul class="order-form__box">
+                <li><img class="order-form__pic" src="./images/desktop/milkshake.png" alt="" /></li>
+                <li>
+                  <input
+                    class="order-form__number"
+                    type="number"
+                    name="icecream"
+                    value="0"
+                    min="0"
+                  />
+                </li>
+              </ul>
+            </label>
+          </form>
+
+          <form class="contact-form">
+            <label class="contact-form__group">
+              <span class="contact-form__label">Name</span>
+              <input class="contact-form__input" type="text" name="user-name" />
+              <svg class="contact-form__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-modal-person"></use>
+              </svg>
+            </label>
+            <label class="contact-form__group">
+              <span class="contact-form__label">Phone</span>
+              <input class="contact-form__input" type="text" name="user-phone" />
+              <svg class="contact-form__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-modal-phone"></use>
+              </svg>
+            </label>
+            <label class="contact-form__group">
+              <span class="contact-form__label">E-mail</span>
+              <input class="contact-form__input" type="text" name="user-email" />
+              <svg class="contact-form__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-modal-email"></use>
+              </svg>
+            </label>
+            <label class="contact-form__group">
+              <span class="contact-form__label">Commentary</span>
+              <textarea class="feedback__form" name="feedback" placeholder="Enter text"></textarea>
+            </label>
+            <label class="checkbox__form">
+              <input
+                class="visually-hidden checkbox__form-input"
+                type="checkbox"
+                name="user-agreement"
+                checked
+              />
+              <span class="checkbox-form__castom">
+                <svg class="checkbox-form__icon" width="11" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              <span class="checkbox-form__agreement checkbox-form__agreement--basic"
+                >Agree with
+              </span>
+              <a class="link checkbox-form__agreement checkbox-form__agreement--on" href="">
+                The Privacy Politicy</a
+              >
+            </label>
+            <button class="button button--modal button--white" type="submit">Checkout</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
