@@ -1,5 +1,6 @@
 /* Hero section */
 .hero {
+  position: relative;
   height: 502px;
 
   background-color: var(--complementary-bg-color);
@@ -10,18 +11,6 @@
 
   @include respond-to('large') {
     height: 664px;
-  }
-}
-
-.hero-container {
-  position: relative;
-
-  @include respond-to('medium') {
-    max-width: 768px;
-  }
-
-  @include respond-to('large') {
-    max-width: 1200px;
   }
 }
 

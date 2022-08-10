@@ -271,6 +271,7 @@ a {
 
 /* Hero section */
 .hero {
+  position: relative;
   height: 502px;
   background-color: var(--complementary-bg-color);
 }
@@ -282,20 +283,6 @@ a {
 @media (min-width: 1200px) {
   .hero {
     height: 664px;
-  }
-}
-
-.hero-container {
-  position: relative;
-}
-@media (min-width: 768px) {
-  .hero-container {
-    max-width: 768px;
-  }
-}
-@media (min-width: 1200px) {
-  .hero-container {
-    max-width: 1200px;
   }
 }
 
