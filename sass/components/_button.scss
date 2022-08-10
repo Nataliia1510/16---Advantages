@@ -54,8 +54,9 @@
   font-weight: 400;
   font-size: 8px;
   line-height: 10px;
-  align-items: center;
+
   text-align: center;
+  padding-top: 6px;
 
   width: 83px;
   height: 24px;
@@ -63,6 +64,8 @@
   @include respond-to('large') {
     font-size: 14px;
     line-height: 18px;
+
+    padding-top: 10px;
 
     width: 138px;
     height: 40px;
