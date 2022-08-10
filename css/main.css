@@ -370,7 +370,7 @@ a {
 .hero__title--dark {
   font-size: 48px;
   line-height: 0.96%;
-  color: #d41443;
+  color: var(--accent-color);
 }
 @media (min-width: 768px) {
   .hero__title--dark {
@@ -409,7 +409,7 @@ a {
   width: 346px;
   height: 344px;
   border-radius: 50%;
-  background-color: #ffa5ba;
+  background-color: var(--secondary-title-color);
 }
 @media (min-width: 768px) {
   .circle {

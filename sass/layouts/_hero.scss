@@ -96,7 +96,7 @@
   font-size: 48px;
   line-height: 0.96%;
 
-  color: #d41443;
+  color: var(--accent-color);
 
   @include respond-to('medium') {
     font-size: 34px;
@@ -129,7 +129,7 @@
   width: 346px;
   height: 344px;
   border-radius: 50%;
-  background-color: #ffa5ba;
+  background-color: var(--secondary-title-color);
 
   @include respond-to('medium') {
     top: 43px;
